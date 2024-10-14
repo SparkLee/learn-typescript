@@ -1,0 +1,11 @@
+{
+	"scripts": {
+		"build": "pnpm tsc --outDir dist && pnpm tsc --outFile dist/MultiFileNamespace.js Reference/Namespace/MultiFileNamespace/Test.ts",
+		"runMultiFileNamespace": "pnpm run build && node dist/MultiFileNamespace.js",
+		"runValidatorsWithNamespace": "pnpm run build && node dist/ValidatorsWithNamespace.js",
+		"runValidatorsWithoutNamespace": "pnpm run build && node dist/ValidatorsWithoutNamespace.js"
+	},
+	"devDependencies": {
+		"typescript": "^5.6.3"
+	}
+}
