@@ -6,6 +6,7 @@
 		"runValidatorsWithoutNamespace": "pnpm run build && node dist/ValidatorsWithoutNamespace.js"
 	},
 	"devDependencies": {
+		"@types/node": "^22.10.2",
 		"typescript": "^5.6.3"
 	}
 }
